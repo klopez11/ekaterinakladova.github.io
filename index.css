@@ -1,0 +1,18 @@
+body {
+	background-color: hsl(200, 100%, 93%); //0 is red, 120 is green, and 240 is blue.
+}
+
+h1 {
+	color: black;
+	text-align:center
+}
+
+p {
+	background-color: hsl(200,100%,90%);
+	background-image: url("images/pets1.jpeg");
+	//background-size: 100% 100%;
+	//background-repeat: no-repeat;
+	border: 2px solid blue;
+	padding: 10px;
+	margin: 20px;
+}
