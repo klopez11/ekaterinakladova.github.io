@@ -1,0 +1,51 @@
+html {
+	font-size: 16px;
+}
+body {
+	background-color: hsl(200, 100%, 93%); 
+	margin-top: 7%;
+	/*0 is red, 120 is green, and 240 is blue; amount of color; lightness (50% is normal)*/
+}
+
+header {
+	background-color: hsl(40, 80%, 40%);
+	width: 100%;
+	min-height: 5%;
+	line-height: 100%;
+	position: fixed;
+    top: 0;
+	left:0;
+	overflow: hidden;
+	text-align:center;
+}
+
+h1 { /*Used for header*/
+	text-align:center;
+	font-size: 60px;
+	color: white;
+	text-decoration: underline;
+}
+
+footer {
+	min-height: 5%;
+    line-height: 200%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+	left:0;
+    width: 100%;
+	text-align: center;
+	background-color: hsl(0, 0%, 70%); */
+}
+#side_menu { /*this is the box with the menu in it*/
+	border: solid black;
+	width: 200px;
+	height: auto;
+	font-size: 150%;
+	padding: 0% 1%;
+}
+
+#menu_list { /*this is the actual menu*/
+	padding: 0px;
+}
+
