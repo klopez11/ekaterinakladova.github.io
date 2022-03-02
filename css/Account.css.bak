@@ -3,7 +3,7 @@ form {
   width: 100%;
             padding: 100px 5px;
             margin: -290px 225px;
-			width: 300px;
+			width: 400px;
             box-sizing: content-box;
             background-color: gray;
 }
