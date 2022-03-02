@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Universe</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/CreatePost.css">
+	<link rel="icon" type="image/x-icon" href="images/page_icon.png">
+	<html lang="en-US" dir="ltr">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Home page for Our Universe">
+</head>
+<header> 
+	<h1>Create Your Post!</h1>
+</header>
+<body>
+	<aside id="side_menu"> 
+		<p>Menu</p>
+		<ul id="menu_list" style="list-style: none;">
+			<li><a href="home.html"><img src="images/home_icon.png" width=13% height=13%> Back to Home</li></a>
+			<li><a href="FriendsList.html"><img src="images/friends_icon.png" width=13% height=13%> Friends List</li></a>
+			<li><a href="Account.html"><img src="images/account_icon.png" width=13% height=13%> Account</li></a>
+			<li><a href="start.html"><img src="images/logout_icon.png" width=13% height=13%> Logout</li></a>
+			<!--<li>Account Information</li>
+			<li>Fun Facts</li>
+			<li>Account Preferences</li>-->
+		</ul>
+	</aside>
+	<section id="create_post">
+		<form action="home.html" method="get">
+			<label >Title of your post:
+				<input  name="title" placeholder="Ex. Kung Fu Panda is Real" required><br>
+			</label>
+			<label>Description:
+				<textarea rows="5" placeholder="Ex. I taught my pet panda kung fu" ></textarea><br>
+			</label>
+			<label>Media:
+				<input id="media" name="media" type="file"><br>
+			</label>
+			<button type="submit" style="margin-top:15px;" >Create Post</button>
+		</form>
+	</section>
+	<footer>
+		<a href="documents/legal.txt" target="_blank">Legal Information</a>
+	</footer>
+</body>
+
+
+</html>
