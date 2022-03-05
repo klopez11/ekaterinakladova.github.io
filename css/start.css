@@ -23,3 +23,12 @@
 	margin-right:35%;
 	padding: .5%;
 }
+
+#reset_pass {
+	//position: relative;
+	//top: 50px;
+}
+
+#forms {
+	text-align: center;
+}

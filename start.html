@@ -17,42 +17,42 @@
 </header>
 
 <body>
-	<h2 style="text-align:center;">Welcome!</h2>
+	<div id="forms">
+	<h2>Welcome!</h2><br>
 	<!-- this is how we do a comment-->
-	<div id="login_box"> 
-		<p>Please log in below:</p>
-		<form action="home.html" method="get">
-			<label >Username<br>
-			<input  name="username" placeholder="Ex. Rocket84" required><br>
-			</label>
-			<label>Password<br>
-			<input type="password" name="password"  required><br>
-			</label>
-			<button type="submit">Log in</button>
-		</form>
+		<div id="login_box"> 
+			<p>Please log in below:</p>
+			<form action="home.html" method="get">
+				<label >Username<br>
+				<input  name="username" placeholder="Ex. Rocket84" required><br>
+				</label>
+				<label>Password<br>
+				<input type="password" name="password"  required><br>
+				</label>
+				<button type="submit">Log in</button><br>
+				<button id="reset_pass">Forgot Your Password?</button>
+			</form>
+		</div>
+		<aside>
+		<div id="register_box"> 
+			<p>Please register below:</p>
+			<form action="home.html" method="get">
+				<label >Username<br>
+				<input  name="username" placeholder="Ex. Rocket84" required><br>
+				</label>
+				<label>Password<br>
+				<input type="password" name="password"  required><br>
+				</label>
+				<label>Confirm Password<br>
+				<input type="password" name="password2" required><br>
+				</input>
+				<button type="submit">Log in</button>
+			</form>
+		</div>
 	</div>
-	<aside>
-	<div id="register_box"> 
-		<p>Please register below:</p>
-		<form action="home.html" method="get">
-			<label >Username<br>
-			<input  name="username" placeholder="Ex. Rocket84" required><br>
-			</label>
-			<label>Password<br>
-			<input type="password" name="password"  required><br>
-			</label>
-			<label>Confirm Password<br>
-			<input type="password" name="password2" required><br>
-			</input>
-			<button type="submit">Log in</button>
-		</form>
-	</div>
-	</aside>	
-	
+	</aside>
 	<footer>
 		<a href="documents/legal.txt" target="_blank">Legal Information</a>
 	</footer>
 </body>
-
-
 </html>

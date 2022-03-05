@@ -1,0 +1,45 @@
+#posts_feed {
+	border: solid black;
+	position: absolute;
+	left: 15%;
+	width: 70vw;
+	margin: 0 auto;
+	height: auto;
+	top: 20%;
+	background-color: hsl(40,65%,100%);
+}
+
+.post {
+	margin: 1% 2%;
+	padding: 2%;
+	padding-bottom: 4%;
+	border: 5px outset orange;
+	border-radius: 40px;
+	background-color: hsl(180, 50%, 95%);
+	height:auto;
+}
+
+button {
+	height: 33px;
+	bottom:2%;
+	position: relative;
+	width:auto;
+	float:right;
+}
+
+.post_content {
+	width: 63vw;
+	border: solid black;
+	padding: 2px;
+	margin: 10px 0px;
+}
+
+.post_user {
+	font-size:20px;
+	margin-left:25px;
+}
+
+.post_user_img {
+	width: 34px;
+	height: 34px;
+}
