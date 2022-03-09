@@ -2,44 +2,39 @@
 	border: solid black;
 	position: absolute;
 	left: 15%;
-	width: 70vw;
+	width: 67vw;
 	margin: 0 auto;
 	height: auto;
-	top: 20%;
+	top: 20vh;
 	background-color: hsl(40,65%,100%);
 }
 
 .post {
-	margin: 1% 2%;
-	padding: 2%;
-	padding-bottom: 4%;
-	border: 5px outset orange;
-	border-radius: 40px;
+	margin: 1vh 1vw;
+	padding: 1vw;
+	border: .2vw outset orange;
+	border-radius: 5vh;
 	background-color: hsl(180, 50%, 95%);
 	height:auto;
 }
 
-button {
-	height: 33px;
-	bottom:2%;
-	position: relative;
-	width:auto;
-	float:right;
-}
-
 .post_content {
-	width: 63vw;
-	border: solid black;
+	width: min(1000px, 61vw);
+	border: solid black .2vw;
 	padding: 2px;
 	margin: 10px 0px;
 }
 
 .post_user {
-	font-size:20px;
+	font-size:min(20px,5vh);
 	margin-left:25px;
 }
 
 .post_user_img {
-	width: 34px;
-	height: 34px;
+	width: min(34px,2.5vw);
+	height: min(34px,5vh);
+}
+
+.friend_list_item {
+	margin: .50vh 0;
 }

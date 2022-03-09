@@ -23,7 +23,7 @@
 	max-height:80%;
 }
 
-button {
+.FL_button {
 	height: 33px;
 	bottom:.5%;
 	position: relative;
