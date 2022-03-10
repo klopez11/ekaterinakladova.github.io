@@ -1,3 +1,4 @@
+
 #account_form {
 	position: absolute;
 	text-align: center;
@@ -11,7 +12,7 @@
 	left: 30%;
 	line-height: 1.5vh;
 	color: white;
-}
+
 
 label {
 	line-height: 3vh;

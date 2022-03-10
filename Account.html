@@ -31,30 +31,6 @@
 			<li><button onclick="confirmation()"><img src="images/logout_icon.png") width=13% height=13%> Logout</li></a>
 		</ul>
 	</aside>
-	<form id= "account_form" action="Account.html" method="get">
-		<label>Nickname:<br>
-			<input  name="nickname" placeholder="Po the Panda" required><br>
-		</label> 
-		<br>
-		<label>Location:<br>
-			<input name="location" required><br>
-		</label>
-		<br>
-		<label>Breed/Type:<br>
-			<input name="type" required><br>
-		</label>
-		<br>
-		<label>Age:<br>
-			<input name="age" required><br>
-		</label>
-		
-		<div class="image-placeholder">
-			<h4>image placeholder text</h4>
-		</div>
-		<!-- We can add a link to the account reset or update account password here -->
-		
-		<button type="submit">Submit</button>
-	</form>
 	
 	<aside id="friends_menu">
 		<ul id="friend_list_aside">
@@ -75,6 +51,82 @@
 		</li>
 		</ul>
 	</aside>
+		<form action="Account.html" method="get" id="Form1" style="float:left">
+			<p> Account Information </p>
+			<label>Nickname:<br>
+				<input  name="nickname" placeholder="Po the Panda" required><br>
+			</label>
+			<br>
+			<br> 
+			<label>Location:<br>
+				<input name="location" required><br>
+			</label>
+			<br>
+			<br>
+			<label>Breed/Type:<br>
+				<input name="type" required><br>
+			</label>
+			<br>
+			<br>
+			<label>Age:<br>
+				<input name="age" required><br>
+			</label>
+			<br>
+			<br> 
+			<!-- We can add a link to the account reset or update account password here -->
+			<br>
+			<div class="input-group mb-3">
+			<input type="file" class="form-control" id="inputGroupFile02">
+			<label class="input-group-text" for="inputGroupFile02">Upload</label>
+				</div>
+			<br>
+			<br>
+			<input type="submit" value="Submit" form="Form1">
+			<br>
+		</form>
+		
+		<form action="home.html" method="get" id="secondForm" style="float:right">
+			<p> Account Preferences </p>
+			<p> Hide post I make from: </p>
+			<select class="form-select" multiple aria-label="multiple select example">
+				<option selected>0</option>
+				<option value="1">Friend One</option>
+			<option value="2">Friend Two</option>
+			<option value="3">Friend Three</option>
+		</select>
+			<br>
+			<p> Hide comments I make from: </p>
+			<select class="form-select" multiple aria-label="Blocking">
+			<option selected>0</option>
+			<option value="1">Friend One</option>
+			<option value="2">Friend Two</option>
+			<option value="3">Friend Three</option>
+		</select>
+		<br>
+		<div class="form-check">
+		<label class="form-check-label" for="flexCheckIndeterminate">
+			Show liked posts from friends
+		</label>
+		<input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+		</div>
+			
+		<div class="form-check">
+		<label class="form-check-label" for="flexCheckIndeterminate">
+			Show shared posts from friends
+		</label>
+		<input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+		</div>
+		
+		<div class="form-check">
+		<label class="form-check-label" for="flexCheckIndeterminate">
+			Autoplay?
+		</label>
+		<input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+		</div>
+			<br>
+			<input type="submit" value="Submit" form="secondForm">
+		</form>
+
 	
 	<footer>
 		<a href="documents/legal.txt" target="_blank">Legal Information</a>
