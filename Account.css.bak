@@ -1,0 +1,14 @@
+form {
+  text-align: center;
+  width: 100%;
+            padding: 100px 5px;
+            margin: -290px 225px;
+			width: 400px;
+            box-sizing: content-box;
+            background-color: gray;
+}
+body {
+	background-image: linear-gradient(180deg, hsl(200, 100%, 90%), hsl(200,100%,95%)); 
+	background-repeat: no-repeat;
+	background-size: 100000px 100000px;
+	}
