@@ -1,28 +1,44 @@
 .form {
 	position: absolute;
 	text-align: center;
-	width: 100%;
 	padding: 5vh 1vw;
 	margin: 0 10vw;
-	width: 16vw;
+	width: 25vw;
+	height: 60%;
 	box-sizing: content-box;
 	background-color: gray;
 	top: 20vh;
 	line-height: 1.5vh;
 	color: white;
+	font-size: 3vh;
 }
 #account_form {
-	left: 20%;
+	left: 12%;
 }
 #funfacts_form {
-	right:20%;
+	right:12%;
 }
 
 label {
-	line-height: 3vh;
+	line-height: 5vh;
 }
 
-textarea, input {
-	max-width: 13vw;
+textarea, input[type="text"] {
+	width: 80%;
+	max-width: 20vw;
 	max-height: 10vh;
+	font-size: 3vh;
+}
+
+input[type="number"] {
+	width: 5vw;
+	font-size: 3vh;
+}
+
+button[type="submit"] {
+	height: 4vh;
+	width: 5vw;
+	position: absolute;
+	bottom: .5vh;
+	left: 42%;
 }
