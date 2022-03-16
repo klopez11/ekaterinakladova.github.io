@@ -19,7 +19,7 @@ function resetPass() {
 		alert("Please try again with a valid username");
 }
 
-function createform() {
+function createform() { //In beta, not really working yet
 	// Create element:
 	const para = document.createElement("form");
 	para.innerHTML = "Please enter your username";
