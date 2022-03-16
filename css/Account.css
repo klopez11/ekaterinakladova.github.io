@@ -1,17 +1,18 @@
 .form {
 	position: absolute;
 	text-align: center;
-	padding: 5vh 1vw;
+	padding: 11vh 1vw;
 	margin: 0 10vw;
 	width: 25vw;
 	height: 60%;
 	box-sizing: content-box;
 	background-color: gray;
-	top: 20vh;
+	top: 10vh;
 	line-height: 1.5vh;
 	color: white;
 	font-size: 3vh;
 }
+
 #account_form {
 	left: 12%;
 }
@@ -20,7 +21,7 @@
 }
 
 label {
-	line-height: 5vh;
+	line-height: 4.5vh;
 }
 
 textarea, input[type="text"] {
@@ -35,10 +36,10 @@ input[type="number"] {
 	font-size: 3vh;
 }
 
-button[type="submit"] {
+input[type="submit"] {
 	height: 4vh;
 	width: 5vw;
 	position: absolute;
-	bottom: .5vh;
+	bottom: 2vh;
 	left: 42%;
 }

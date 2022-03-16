@@ -30,34 +30,44 @@
 			<li><button onclick="confirmation()"><img src="images/logout_icon.png") width=13% height=13%> Logout</li></a>
 		</ul>
 	</aside>
-	<form class="form" id= "account_form" action="Account.html" method="get">
+	<form class="form" id="account_form" action="Account.html" method="get">
 		<label>Nickname:<br>
-			<input  name="nickname" placeholder="Po the Panda" required><br>
+			<input  name="nickname" placeholder="Po the Panda" required style="height:25px;width:200px"><br>
 		</label> 
 		<br>
 		<label>Location:<br>
-			<input name="location" required><br>
+			<input name="location" required style="height:25px;width:200px"><br>
 		</label>
 		<br>
 		<label>Breed/Type:<br>
-			<input name="type" required><br>
+			<input name="type" required style="height:25px;width:200px"><br>
 		</label>
 		<br>
 		<label>Age:<br>
-			<input name="age" required><br>
+			<input name="age" required style="height:25px;width:200px"><br>
 		</label>
-		
+		<!-- We can add a link to the account reset or update account password here -->
+		<br>
 		<div class="image-placeholder">
 			<h4>image placeholder text</h4>
 		</div>
-		<!-- We can add a link to the account reset or update account password here -->
-		
-		<button type="submit">Submit</button>
+		<br>
+		<br>
+		<br>
+		<input type="file" id="myFile" name="pfpPhoto">
+		<button type="submit" form="image_form">Upload</button>
+		<br>
+		<input type="submit" name="Submit">
 	</form>
+	
+	<form action="/action_page.php" id="image_form">
+	</form>
+
 	<form class="form" id= "funfacts_form" action="Account.html" method="get">
 		<label>Favorite Activities<br>
 			<textarea id="fav_activities"  name="fav_activities" placeholder="Running aroung, napping, etc." ></textarea><br>
 		</label> 
+		<br>
 		<br>
 		<label>Social or Solitary?<br>
 			<input id="social" type="radio" name="social?">Social<br>
@@ -65,14 +75,14 @@
 			<input id="shy" type="radio" name="social?">Shy<br>
 		</label>
 		<br>
+		<br>
 		<label>Looking for friends?<br>
 			<input id="friend_yes" type ="radio" name="friends?">Yes, I love meeting new people!<br>
 			<input id="friend_no" type ="radio" name="friends?">No, I'm not good with others.<br>
 			<input id="friend_notrn" type="radio" name="friends?">Not at the moment.<br>
 		</label>
 		<br>
-		
-		<button type="submit">Submit</button>
+		<input type="submit">
 	</form>
 	
 	<aside id="friends_menu">
