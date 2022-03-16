@@ -55,6 +55,11 @@ h2 {
 	text-decoration: bold;
 }
 
+h3 {
+	font-size: 3vh;
+	text-decoration: underline;
+}
+
 button {
 	font-size: min(14px, 1vw);
 	border: solid black .1vw;

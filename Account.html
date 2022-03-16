@@ -31,39 +31,39 @@
 		</ul>
 	</aside>
 	<form class="form" id="account_form" action="Account.html" method="get">
+	<h3>Account Information</h3>
 		<label>Nickname:<br>
-			<input  name="nickname" placeholder="Po the Panda" required style="height:25px;width:200px"><br>
+			<input name="nickname" type="text"  placeholder="Po the Panda" required><br>
 		</label> 
 		<br>
 		<label>Location:<br>
-			<input name="location" required style="height:25px;width:200px"><br>
+			<input name="location" type="text"  required><br>
 		</label>
 		<br>
 		<label>Breed/Type:<br>
-			<input name="type" required style="height:25px;width:200px"><br>
+			<input name="type" type="text"  required><br>
 		</label>
 		<br>
 		<label>Age:<br>
-			<input name="age" required style="height:25px;width:200px"><br>
+			<input name="age" type="number" required><br>
 		</label>
 		<!-- We can add a link to the account reset or update account password here -->
 		<br>
+		<label>Profile Picture:<br>
 		<div class="image-placeholder">
-			<h4>image placeholder text</h4>
+			<img src="images/placeholder.png">
 		</div>
-		<br>
-		<br>
-		<br>
-		<input type="file" id="myFile" name="pfpPhoto">
-		<button type="submit" form="image_form">Upload</button>
-		<br>
-		<input type="submit" name="Submit">
+		<input type="file" id="myFile" name="pfpPhoto" accept="image/*">
+		<!-- <button type="submit" form="image_form" style="float: right;">Upload</button> -->
+		</label>
+		<button class="form_submit" type="submit">Submit</button>
 	</form>
 	
 	<form action="/action_page.php" id="image_form">
 	</form>
 
 	<form class="form" id= "funfacts_form" action="Account.html" method="get">
+	<h3>Fun Facts</h3>
 		<label>Favorite Activities<br>
 			<textarea id="fav_activities"  name="fav_activities" placeholder="Running aroung, napping, etc." ></textarea><br>
 		</label> 
@@ -82,7 +82,7 @@
 			<input id="friend_notrn" type="radio" name="friends?">Not at the moment.<br>
 		</label>
 		<br>
-		<input type="submit">
+		<button class="form_submit" type="submit">Submit</button>
 	</form>
 	
 	<aside id="friends_menu">
