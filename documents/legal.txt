@@ -10,3 +10,4 @@ friends_icon.png - https://www.kindpng.com/imgv/iiRJbow_transparent-pet-icon-png
 account_icon.png - https://www.stickpng.com/img/icons-logos-emojis/users/simple-user-icon
 logout_icon.png - https://thenounproject.com/icon/logout-319881/
 home_icon.png - https://thenounproject.com/icon/dog-house-489163/
+placeholder.png - Bryce Cable
