@@ -1,19 +1,15 @@
 // Initialize the FirebaseUI Widget using Firebase.
+import {getAuth, getRedirectResult, GoogleAuthProvider} from "firebase/auth";
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 ui.start('#firebaseui-auth-container', {
   signInOptions: [
-    firebase.auth.EmailAuthProvider.PROVIDER_ID
-	provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-    signInMethod: firebase.auth.EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
 	firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     }
   ],
   // Other config options..
   // Other config options...
 });
-if (ui.isPendingRedirect()) {
-  ui.start('#firebaseui-auth-container', uiConfig);
-}
 // This can also be done via:
 if (firebase.auth().isSignInWithEmailLink(window.location.href)) {
   ui.start('#firebaseui-auth-container', uiConfig);
@@ -45,6 +41,31 @@ var uiConfig = {
   // Privacy policy url.
   privacyPolicyUrl: '<your-privacy-policy-url>'
 };
+
+//Trying to sign people in with Google
+const provider = new GoogleAuthProvider();
+const auth = getAuth();
+signInWithRedirect(auth, provider);
+getRedirectResult(auth)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access Google APIs.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    // The signed-in user info.
+    const user = result.user;
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+
+
 function resetPass() {
 	let username = prompt("Please enter your username");
 	let sq = "What is your favorite color?"; /*placeholder*/
