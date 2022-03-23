@@ -1,9 +1,56 @@
-form {
-  text-align: center;
-  width: 100%;
-            padding: 10px 5px;
-            margin: 5px 750px;
-			width: 400px;
-            box-sizing: content-box;
-            background-color: gray;
+.form {
+	position: absolute;
+	text-align: center;
+	padding: 5vh 1vw 11vh 1vw;
+	margin: 0 10vw;
+	width: 25vw;
+	height: 68vh;
+	box-sizing: content-box;
+	background-color: gray;
+	top: 10vh;
+	line-height: 1.5vh;
+	color: white;
+	font-size: 3vh;
+}
+
+#account_form {
+	left: 12%;
+}
+#funfacts_form {
+	right:12%;
+}
+
+label {
+	line-height: 4.5vh;
+}
+
+textarea, input[type="text"] {
+	width: 80%;
+	max-width: 20vw;
+	max-height: 10vh;
+	font-size: 3vh;
+}
+
+input[type="number"] {
+	width: 5vw;
+	font-size: 3vh;
+}
+
+input[type="file"] {
+	position: absolute;
+	left:28%;
+	font-size: 2vh;
+}
+
+.form_submit {
+	height: 4vh;
+	width: 5vw;
+	position: absolute;
+	bottom: 2vh;
+	left: 42%;
+	border-width: .1vw;
+}
+.image-placeholder img {
+	width: 6vw;
+	height: 6vw;
 }

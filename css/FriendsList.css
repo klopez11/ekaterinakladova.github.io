@@ -17,13 +17,13 @@
 	background-color: hsl(180, 50%, 90%);
 |}
 
-#test {
+#wrapper {
 	min-height:auto;
 	height:1000px;
 	max-height:80%;
 }
 
-button {
+.FL_button {
 	height: 33px;
 	bottom:.5%;
 	position: relative;
